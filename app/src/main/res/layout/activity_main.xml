@@ -4,44 +4,45 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <TextView
-        android:id="@+id/textViewTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Calculadora de Combustível"
-        android:textSize="24sp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp" />
+    <EditText
+        android:id="@+id/editTextA"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Coeficiente a" />
 
     <EditText
-        android:id="@+id/editTextGasolina"
+        android:id="@+id/editTextB"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Preço do litro da Gasolina"
-        android:inputType="numberDecimal" />
+        android:layout_height="48dp"
+        android:hint="Coeficiente b"
+        android:layout_below="@id/editTextA" />
 
     <EditText
-        android:id="@+id/editTextEtanol"
+        android:id="@+id/editTextC"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Preço do litro do Etanol"
-        android:inputType="numberDecimal"
-        android:layout_below="@id/editTextGasolina"
-        android:layout_marginTop="8dp" />
+        android:layout_height="48dp"
+        android:hint="Coeficiente c"
+        android:layout_below="@id/editTextB" />
 
     <Button
         android:id="@+id/buttonCalcular"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calcular"
-        android:layout_below="@id/editTextEtanol"
+        android:layout_below="@id/editTextC"
         android:layout_marginTop="16dp" />
 
     <TextView
         android:id="@+id/textViewResultado"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/buttonCalcular"
-        android:layout_marginTop="16dp"
-        android:textSize="18sp" />
+        android:layout_marginTop="16dp" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="132dp"
+        android:text="BRENDA SANTANA - 1110482313042" />
 </RelativeLayout>
